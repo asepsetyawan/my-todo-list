@@ -6,7 +6,6 @@ class TodoForm extends Component {
     doSubmit = (e) => {
         e.preventDefault();
 		let task = ReactDOM.findDOMNode(this.refs.task).value.trim();
-        console.log(task);
 		if (!task) {
 			return;
 		}
